@@ -1,0 +1,27 @@
+Exercício Módulo 06
+---
+
+Algoritmo de HORA DE ACORDAR em portugol:
+
+INÍCIO
+	1. Despertador toca;
+	2. Se eu tiver com muito sono;
+		1. Clicar em Soneca para dormir mais 5 minutos;
+		2. Desligar o despertador;
+		3. Levantar;
+		4. Vestir uma roupa;
+		5. Ir ao banheiro;
+		6. Lavar o rosto;
+		7. Escovar os dentes;
+		8. Fazer xixi;
+		9. Sair do banheiro;
+	3. Se eu tiver dormido bem;
+		1. Desligar o despertador;
+		2. Levantar;
+		3. Vestir uma roupa;
+		4. Ir ao banheiro;
+		5. Lavar o rosto;
+		6. Escovar os dentes;
+		7. Fazer xixi;
+		8. Sair do banheiro;
+FIM
