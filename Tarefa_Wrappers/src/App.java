@@ -11,6 +11,6 @@ public class App {
 
         Integer numWrapper = numPrimitivo;
         System.out.println("valor primitivo convertido em Integer: " + numWrapper);
-        
+
     }
 }
