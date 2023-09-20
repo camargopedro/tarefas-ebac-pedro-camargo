@@ -14,10 +14,20 @@ public class ExemploStream {
         List<String> pessoas = List.of(listaDeNomes.split(", "));
         for (String s: pessoas) {
             System.out.println(s);
-        }
 
-        Stream<String> stream = pessoas.stream().filter(s -> pessoas.equals("-m"));
-        stream.forEach(i -> System.out.println(i));
+        }
+        System.out.println("=======");
+        System.out.println("lista de mulheres: ");
+        pessoas.stream()
+                .filter(s -> s.endsWith("-f"))
+                .forEach(s -> System.out.println(s));
+
+
+
+       // pessoas.stream().forEach(p -> System.out.println(p));
+
+
+       // stream.forEach(i -> System.out.println(i));
 
 
 
