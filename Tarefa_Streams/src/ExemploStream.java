@@ -1,6 +1,5 @@
 import java.util.List;
 import java.util.Scanner;
-import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 public class ExemploStream {
@@ -12,9 +11,17 @@ public class ExemploStream {
         System.out.println("Digite nomes e sexos (-m ou -f) separados por vírgula: ");
         String listaDeNomes = entrada.nextLine();
 
-        List<String> lista = List.of(listaDeNomes.split(", "));
+        List<String> pessoas = List.of(listaDeNomes.split(", "));
+        for (String s: pessoas) {
+            System.out.println(s);
+        }
 
-        for (String s : lista) {
+        Stream<String> stream = pessoas.stream().filter(s -> pessoas.equals("-m"));
+        stream.forEach(i -> System.out.println(i));
+
+
+
+        /*for (String s : lista) {
             String nome = s.trim(); // Remove espaços em branco no início e no fim
             if (nome.endsWith("-m")) {
                 List<String> mas = List.of(nome);
@@ -31,5 +38,7 @@ public class ExemploStream {
             }
 
         }
+
+         */
     }
 }
